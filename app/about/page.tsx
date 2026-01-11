@@ -68,7 +68,7 @@ export default function AboutPage() {
             <span className="text-terminal-gray w-20">Coffee</span>
             <span className="text-terminal-dim">→</span>
             <a
-              href="https://buymeacoffee.com/yourusername"
+              href="https://buymeacoffee.com/endex_nova"
               target="_blank"
               rel="noopener noreferrer"
               className="text-terminal-cyan hover:text-terminal-green transition-colors"
