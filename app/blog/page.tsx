@@ -3,8 +3,8 @@ import PostCard from "@/components/PostCard";
 import { getAllPosts } from "@/lib/posts";
 
 export const metadata = {
-  title: "Blog | Undefined",
-  description: "All blog posts",
+  title: "Weblog | Undefined",
+  description: "All weblog posts",
 };
 
 export default function BlogPage() {
@@ -13,7 +13,7 @@ export default function BlogPage() {
   return (
     <Terminal>
       <section>
-        <h1 className="text-terminal-green text-xl mb-8">Blog</h1>
+        <h1 className="text-terminal-green text-xl mb-8">Weblog</h1>
 
         {posts.length > 0 ? (
           <div className="space-y-1">

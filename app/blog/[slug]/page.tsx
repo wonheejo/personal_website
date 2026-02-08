@@ -41,7 +41,7 @@ export default async function BlogPostPage({ params }: Props) {
             href="/blog"
             className="text-terminal-dim hover:text-terminal-cyan transition-colors text-sm mb-4 inline-block"
           >
-            ← Back to Blog
+            ← Back to Weblog
           </Link>
           <h1 className="text-terminal-green text-2xl mb-2">{post.title}</h1>
           <p className="text-terminal-gray text-sm">{post.date}</p>

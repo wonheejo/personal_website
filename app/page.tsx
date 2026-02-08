@@ -35,7 +35,7 @@ export default function Home() {
             href="/blog"
             className="text-terminal-green text-lg hover:text-terminal-cyan transition-colors"
           >
-            Blog
+            Weblog
           </Link>
           <span className="text-terminal-dim ml-2">- Recent posts</span>
         </div>

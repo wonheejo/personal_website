@@ -1,0 +1,26 @@
+---
+title: "Building a Small App with Claude Code: Planning as the Main Product"
+date: "2025-02-88"
+description: "My experience with vibe coding"
+---
+
+
+I recently used Claude Code to build a small mobile app, and the most valuable part of the experience wasn’t the finished app rather, it was the planning discipline that came before (and during) the build.
+
+From the start, the project was treated less like “let’s code an idea” and more like “let’s fully specify what exists and what doesn’t.” Claude and I worked through the app as a concrete system: backend, infra, mobile clients, notifications, store compliance, and release constraints. Out of that came a very explicit, end-to-end task list of all the necessary "debated" to-dos such as: database schemas, edge functions, auth flows, notification setup, simulator verification, store assets, legal pages, signing configs. Everything either existed on the task list or it didn’t.
+
+That checklist ended up being the real backbone of the project. We followed it almost mechanically, one task at a time. When something broke, it was obvious where it belonged. When something was missing, it showed up as a gap in the plan rather than a surprise during implementation. And it was interesting how it would recommend to implement other tasks before previous ones, if it was too time consuming or if it was something I needed to get done on my end.
+
+What genuinely surprised me was how well Claude handled intent, not just instructions. I wasn’t only saying what to build, but why certain decisions mattered and why the app should stay non-financial, why permissions should be conservative, why I wanted to start with something simple and nothing too complicated. That context carried through the entire build.
+
+Even more unexpectedly, I was more surprised with this from Claude: Claude was able to interact with iOS and Android simulators directly: taking screenshots, recording short screen videos, inspecting UI state, and debugging based on what was visually happening rather than abstract logs. That feedback loop of observe → analyze → adjust → repeat from beginning, felt like this is something I would've done manually myself years ago, but it was done more quick with it.
+
+The app itself is intentionally modest: an alert-style app designed to do one thing reliably. It doesn’t touch money, transactions, or sensitive financial flows. I wanted the first version to be constrained, understandable, and safe. At the time of writing, it’s still awaiting final approval from the App Store and Play Store, so technically it isn’t released yet.
+But that almost feels beside the point.
+
+The real outcome was realizing that tools like Claude don’t just accelerate development and execution, rather they amplify planning quality. The clearer the system definition became, the smoother everything else followed. Code was written faster, bugs were easier to isolate, and the overall build felt unusually "calm".
+
+If this is what modern “pair programming” looks like, then the most important skill may no longer be typing speed or framework familiarity, but the ability to think clearly enough to describe what you actually want to exist before you try to ship it. Basically, it brings me to my final key take away point: "Prompting". The more clear, concise and specific you are, the more of the outcome to be what you have expected. 
+
+The more you spend in planning dictates the overall quality of the expect outcome. Which I believe directly ties with efficiency. 
+
