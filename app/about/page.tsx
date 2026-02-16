@@ -9,7 +9,7 @@ export const metadata = {
 export default function AboutPage() {
   const links = [
     { name: "GitHub", url: "https://github.com/wonheejo", label: "github.com/wonheejo" },
-    { name: "Twitter", url: "https://x.com/endex_novawitter.com/username", label: "@endex_nova" },
+    { name: "Twitter", url: "https://x.com/0xdawn_", label: "@0xdawn_" },
     { name: "Email", url: "wonheejo@gmail.com", label: "wonheejo@gmail.com" },
   ];
 
