@@ -1,11 +1,11 @@
 import Terminal from "@/components/Terminal";
 import BlinkingCursor from "@/components/BlinkingCursor";
 import DonateButton from "@/components/DonateButton";
-import { getLatestPosts } from "@/lib/posts";
-import Link from "next/link";
+import PostCard from "@/components/PostCard";
+import { getAllPosts } from "@/lib/posts";
 
 export default function Home() {
-  const latestPosts = getLatestPosts(3);
+  const posts = getAllPosts();
 
   return (
     <Terminal>
@@ -28,54 +28,23 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Blog Preview Section */}
+      {/* Blog Posts */}
       <section className="mb-12">
-        <div className="mb-4">
-          <Link
-            href="/blog"
-            className="text-terminal-green text-lg hover:text-terminal-cyan transition-colors"
-          >
-            Weblog
-          </Link>
-          <span className="text-terminal-dim ml-2">- Recent posts</span>
-        </div>
-        <div className="ml-4 border-l border-terminal-dim/30 pl-4">
-          {latestPosts.length > 0 ? (
-            <ul className="space-y-2">
-              {latestPosts.map((post) => (
-                <li key={post.slug} className="flex gap-4">
-                  <span className="text-terminal-gray text-sm">{post.date}</span>
-                  <a
-                    href={`/blog/${post.slug}`}
-                    className="text-terminal-cyan hover:text-terminal-green transition-colors"
-                  >
-                    {post.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="text-terminal-dim">No posts yet...</p>
-          )}
-        </div>
-      </section>
-
-      {/* About Preview Section */}
-      <section className="mb-12">
-        <div className="mb-4">
-          <Link
-            href="/about"
-            className="text-terminal-green text-lg hover:text-terminal-cyan transition-colors"
-          >
-            About
-          </Link>
-          <span className="text-terminal-dim ml-2">- About me</span>
-        </div>
-        <div className="ml-4 border-l border-terminal-dim/30 pl-4">
-          <p className="text-terminal-dim">
-            A brief introduction and links to find me elsewhere on the web.
-          </p>
-        </div>
+        {posts.length > 0 ? (
+          <div className="space-y-1">
+            {posts.map((post) => (
+              <PostCard
+                key={post.slug}
+                slug={post.slug}
+                title={post.title}
+                date={post.date}
+                description={post.description}
+              />
+            ))}
+          </div>
+        ) : (
+          <p className="text-terminal-dim">No posts yet...</p>
+        )}
       </section>
 
       {/* Footer */}
