@@ -18,7 +18,7 @@
   --color-terminal-cyan: var(--terminal-cyan);
   --color-terminal-selection: var(--terminal-selection);
   --color-terminal-gray: var(--terminal-gray);
-  --font-sans: var(--font-haffer);
+  --font-sans: var(--font-fira-code);
   --font-mono: var(--font-fira-code);
 }
 
