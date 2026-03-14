@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${firaCode.variable} antialiased`}>
+      <body className={`${firaCode.variable} ${firaCode.className} antialiased`}>
         <div className="min-h-screen bg-background text-foreground">
           {children}
         </div>
