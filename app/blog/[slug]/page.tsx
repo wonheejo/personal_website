@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import Terminal from "@/components/Terminal";
 import { getPostBySlug, getAllPosts } from "@/lib/posts";
 import Link from "next/link";
@@ -48,7 +49,7 @@ export default async function BlogPostPage({ params }: Props) {
         </header>
 
         <div className="prose text-terminal-green">
-          <MDXRemote source={post.content} />
+          <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
         </div>
 
         <footer className="mt-16 pt-8 border-t border-terminal-dim/30">
