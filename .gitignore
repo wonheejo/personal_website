@@ -24,6 +24,9 @@
 .DS_Store
 *.pem
 
+# private notes/reference docs (kept local, repo is public)
+/docs/
+
 # debug
 npm-debug.log*
 yarn-debug.log*
