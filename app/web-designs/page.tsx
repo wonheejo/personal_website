@@ -61,6 +61,16 @@ export default function WebDesigns() {
           <p className="mt-1 text-xs text-terminal-dim">
             240 roots of the E8 lattice, tumbling through 8 dimensions
           </p>
+          <p className="mt-1 text-xs text-terminal-dim">
+            source:{" "}
+            <a
+              href="https://www.bittensor.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              bittensor.com
+            </a>
+          </p>
         </div>
       </section>
     </div>
