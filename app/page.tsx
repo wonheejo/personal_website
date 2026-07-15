@@ -18,7 +18,7 @@ export default function Home() {
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background" />
 
         {/* Nav */}
-        <header className="absolute inset-x-0 top-0">
+        <header className="absolute inset-x-0 top-0 border-b border-terminal-dim/20 bg-background/80 backdrop-blur-sm">
           <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5 text-sm">
             <span className="font-semibold tracking-[0.25em] text-foreground">
               UNDEFINED
