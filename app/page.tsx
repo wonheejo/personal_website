@@ -31,6 +31,12 @@ export default function Home() {
                 POSTS
               </a>
               <Link
+                href="/web-designs"
+                className="text-terminal-dim no-underline transition-colors hover:text-foreground hover:no-underline"
+              >
+                WEB DESIGNS
+              </Link>
+              <Link
                 href="/about"
                 className="text-terminal-dim no-underline transition-colors hover:text-foreground hover:no-underline"
               >

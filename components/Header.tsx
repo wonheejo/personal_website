@@ -8,6 +8,7 @@ export default function Header() {
 
   const navItems = [
     { href: "/", label: "WEBLOG" },
+    { href: "/web-designs", label: "WEB DESIGNS" },
     { href: "/about", label: "ABOUT" },
   ];
 
