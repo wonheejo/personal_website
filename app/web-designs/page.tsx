@@ -22,7 +22,7 @@ export default function WebDesigns() {
           </Link>
           <div className="flex items-center gap-6">
             <Link
-              href="/#posts"
+              href="/blog"
               className="text-terminal-dim no-underline transition-colors hover:text-foreground hover:no-underline"
             >
               POSTS

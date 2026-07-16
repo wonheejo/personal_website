@@ -24,12 +24,12 @@ export default function Home() {
               UNDEFINED
             </span>
             <div className="flex items-center gap-6">
-              <a
-                href="#posts"
+              <Link
+                href="/blog"
                 className="text-terminal-dim no-underline transition-colors hover:text-foreground hover:no-underline"
               >
                 POSTS
-              </a>
+              </Link>
               <Link
                 href="/web-designs"
                 className="text-terminal-dim no-underline transition-colors hover:text-foreground hover:no-underline"
