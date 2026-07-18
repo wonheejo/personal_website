@@ -26,6 +26,7 @@
 
 # private notes/reference docs (kept local, repo is public)
 /docs/
+/backup_*/
 
 # debug
 npm-debug.log*
